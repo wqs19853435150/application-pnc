@@ -1,0 +1,14 @@
+module_config {
+  module_library : "remote_control_commmand_demo/libremote_control_commmand_demo_component.so"
+  components {
+    class_name : "RemoteControlCommmandDemo"
+    config {
+      name : "remote_control_commmand_demo"
+      config_file_path: "remote_control_commmand_demo/conf/remote_control_commmand_demo.pb.txt"
+      flag_file_path: "remote_control_commmand_demo/conf/remote_control_commmand_demo.conf"
+      readers {
+        channel: "/apollo/remote_control_commmand_demo"
+      }
+    }
+  }
+}

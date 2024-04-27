@@ -1,0 +1,7 @@
+<cyber>
+  <module>
+    <name>remote_control_commmand_demo</name>
+    <dag_conf>remote_control_commmand_demo/dag/remote_control_commmand_demo.dag</dag_conf>
+    <process_name>remote_control_commmand_demo</process_name>
+  </module>
+</cyber>

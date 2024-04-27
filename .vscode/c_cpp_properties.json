@@ -1,27 +1,29 @@
 {
-    "env": {
-        "defaultSrcPath": "${workspaceFolder}/.aem/envroot/opt/apollo/neo/src",
-        "defaultIncludePath": "${workspaceFolder}/.aem/envroot/opt/apollo/neo/include"
-    },
-    "configurations": [
-        {
-            "name": "Linux",
-            "includePath": [
-                "${workspaceFolder}/**",
-                "${defaultSrcPath}",
-                "${defaultIncludePath}"
-            ],
-            "defines": [],
-            "compilerPath": "/usr/bin/gcc",
-            "cStandard": "c11",
-            "cppStandard": "c++14",
-            "browse": {
-                "path": [
-                    "${defaultSrcPath}"
-                ],
-                "limitSymbolsToIncludedHeaders": true
-            }
-        }
-    ],
-    "version": 4
+  "env": {
+    "defaultSrcPath": "${workspaceFolder}/.aem/envroot/opt/apollo/neo/src",
+    "defaultIncludePath": [
+      "${workspaceFolder}/.aem/envroot/opt/apollo/neo/include",
+      "/home/wqs/application-pnc/modules/planning/planning_component"
+    ]
+  },
+  "configurations": [
+    {
+      "name": "linux-gcc-x64",
+      "includePath": [
+        "${workspaceFolder}/**"
+      ],
+      "defines": [],
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "${default}",
+      "cppStandard": "${default}",
+      "browse": {
+        "path": [
+          "${defaultSrcPath}"
+        ],
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "intelliSenseMode": "linux-gcc-x64"
+    }
+  ],
+  "version": 4
 }
